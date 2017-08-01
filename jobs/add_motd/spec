@@ -1,0 +1,13 @@
+---
+name: add_motd
+description: this release adds motd
+
+templates: 
+  motd.erb: motd
+
+packages: []
+
+properties: 
+  add_motd.motd: 
+    description: text for motd
+    default: This is working
