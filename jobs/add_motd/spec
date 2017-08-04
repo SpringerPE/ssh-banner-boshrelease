@@ -4,6 +4,10 @@ description: this release adds motd
 
 templates: 
   motd.erb: motd
+  pre-start: bin/pre-start #.erb where there is a properties variable in the file, otherwise no .erb
+  post-start: bin/post-start
+  post-deploy: bin/post-deploy
+  # drain: bin/drain - actions to be carried out before rebooting / deleting vm done by bosh
 
 packages: []
 
